@@ -1,0 +1,77 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: green;
+    color:antiquewhite
+}
+
+h1{
+    color:azure;
+}
+
+/attribute selector/
+a {
+    color:blueviolet;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: blue;
+}
+    
+
+/child selector/
+ul > li {
+    font-weight: bold;
+}
+    
+/sibling selector/
+
+h1 + p {
+    background-color: rgb(53, 14, 14);
+    padding: 10px;
+    border-radius: 5px;
+    color: brown;
+}
+ul li:hover {
+    color: burlywood;
+}
+/* :nth-child(n) Pseudo-class */
+
+ul li:nth-child(3) {
+
+    background-color: #76818f;
+    
+    }
+    
+    /* :not(selector) Pseudo-class */
+    
+    p:not(:first-of-type) {
+    
+    text-decoration: underline;
+    
+    }
+    
+    /* ::before Pseudo-element */
+    
+    /* use window+dot(.) for emoji */
+    
+    ul li::before {
+    
+    content: "🚀";
+    
+    }
+    
+    /* ::after Pseudo-element */
+ 
+    p::first-letter {
+
+        font-size: 200%;
+        
+        color: #FF7B72;
+        
+        }
+        a::after {
+
+            content: " 🌌";
+            
+            }
